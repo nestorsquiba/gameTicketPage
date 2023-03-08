@@ -37,9 +37,25 @@
 				<span>Detalhes do Ticket</span>
 			</div>
 
-			<form>
+			<form method="POST" action id="formulario">
 				<fieldset>
-					
+					<legend>Escolha um Assunto</legend>
+					<select name="motivo" id="motivo">
+						<option value="null">-</option>
+						<option value="denuncia">Denunciar um Jogador</option>
+						<option value="recuperar-conta">Recuperar minha Conta</option>
+						<option value="problemas-tecnicos">Problemas Técnicos</option>
+					</select>
+
+					<label for="assunto">Assunto</label>
+					<input type="text" id="assunto" name="assunto">
+
+					<label for="descricao">Descrição</label>
+
+					<textarea name="descricao" form="descricao"></textarea>
+
+					<button class="botao" type="submit" value="Submit">Enviar</button>
+
 				</fieldset>
 			</form>
 
